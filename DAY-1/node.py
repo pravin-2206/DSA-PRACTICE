@@ -50,4 +50,18 @@ curr.next=lastNode
 
 printLinkedList(head)
 
+print()
+print("Insert at specific position ")
+
+# insert at specific position
+
+newNode=Node(6)
+curr=head
+pos=3
+for i in range(pos-1):
+        curr=curr.next
+newNode.next=curr.next
+curr.next=newNode
+printLinkedList(head)
+
 
