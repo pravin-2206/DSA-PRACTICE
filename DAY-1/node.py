@@ -16,3 +16,15 @@ head=a
 # print(head.data)
 # print(head.next.data)
 # print(head.next.next.data)
+
+# traverse list  
+
+
+def printLinkedList(head):
+        curr=head
+        while curr!=None:
+                print(curr.data,end=" ") 
+                curr=curr.next
+printLinkedList(head)
+
+
