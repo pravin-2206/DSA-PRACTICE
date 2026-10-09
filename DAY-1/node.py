@@ -38,4 +38,16 @@ head=newNode
 
 printLinkedList(head)
 
+# insert at last position
+
+lastNode=Node(1)
+
+curr=head
+
+while curr.next!=None:
+        curr=curr.next
+curr.next=lastNode
+
+printLinkedList(head)
+
 
