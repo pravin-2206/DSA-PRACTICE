@@ -28,3 +28,14 @@ def printLinkedList(head):
 printLinkedList(head)
 
 
+
+# insert at beginning Node 
+
+newNode=Node(12)
+
+newNode.next=head
+head=newNode
+
+printLinkedList(head)
+
+
