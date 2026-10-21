@@ -30,4 +30,15 @@ while curr.next!=None:
         curr=curr.next
 curr.next=newNode
 LinkedList(head)
+
+print("\n max number in list:")
+
+max=head.data
+curr=head
+
+while curr!=None:
+        if curr.data>max:
+                max=curr.data
+        curr=curr.next
+print("Max ",max)
         
