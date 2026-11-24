@@ -60,3 +60,12 @@ while curr.next.next!=None:
         curr=curr.next 
 curr.next=None
 print(Traversal(head))
+
+# delete at k th index
+
+k=2
+curr=head
+for i in range(k-1): # find k-1 position 
+        curr=curr.next  # move to next
+curr.next=curr.next.next # delete the current next node
+print(Traversal(head))
