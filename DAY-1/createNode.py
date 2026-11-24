@@ -36,3 +36,14 @@ while curr.next!=None:  # check whether the current node is last node
 
 curr.next=newnode  # connect last node with newnode
 print(Traversal(head)) 
+
+print("Insert at kth index:")
+
+k=3
+newnode=Node(15)
+curr=head
+for i in range(k-1):
+        curr=curr.next
+newnode.next=curr.next
+curr.next=newnode
+print(Traversal(head))
