@@ -47,3 +47,8 @@ for i in range(k-1):
 newnode.next=curr.next
 curr.next=newnode
 print(Traversal(head))
+
+
+# delete first node
+head=head.next
+print(Traversal(head))
