@@ -28,3 +28,11 @@ newnode.next=head
 head=newnode
 
 print(Traversal(head))
+newnode=Node(1)
+curr=head # Starts traversal from the first node.
+
+while curr.next!=None:  # check whether the current node is last node
+        curr=curr.next # move to the next node
+
+curr.next=newnode  # connect last node with newnode
+print(Traversal(head)) 
