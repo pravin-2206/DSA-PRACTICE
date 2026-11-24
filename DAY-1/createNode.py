@@ -21,3 +21,10 @@ def Traversal(head):
                 print(curr.data,end=" ")
                 curr=curr.next 
 Traversal(head)
+print()
+# insert at beginning 
+newnode=Node(5)
+newnode.next=head
+head=newnode
+
+print(Traversal(head))
