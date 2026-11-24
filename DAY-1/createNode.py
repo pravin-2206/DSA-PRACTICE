@@ -11,6 +11,13 @@ n2.next=n3
 
 head =n1
 
-print(head.data)
-print(head.next.data)
-print(head.next.next.data)
+# print(head.data)
+# print(head.next.data)
+# print(head.next.next.data)
+
+def Traversal(head):
+        curr=head
+        while curr!=None:
+                print(curr.data,end=" ")
+                curr=curr.next 
+Traversal(head)
