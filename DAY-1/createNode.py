@@ -52,3 +52,11 @@ print(Traversal(head))
 # delete first node
 head=head.next
 print(Traversal(head))
+
+# delete the last node
+
+curr=head
+while curr.next.next!=None:
+        curr=curr.next 
+curr.next=None
+print(Traversal(head))
